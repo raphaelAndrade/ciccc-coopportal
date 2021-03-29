@@ -1,0 +1,317 @@
+@font-face {
+  font-family: SourceSansPro-Regular;
+  src: url(fonts/SourceSansPro-Regular.ttf);
+}
+
+
+ body {
+    font: 400 15px "SourceSansPro-Regular";
+    line-height: 1.8;
+  
+  }
+
+  /* screen size */
+    @media screen and (max-width: 640px) {
+    .logo {
+     height: 10px;
+    width: 10px;
+    }
+
+    #myNavbar {
+      background-color:  #283B8A;
+      color: white;
+
+    }
+     .col-sm-8 h2 {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: black;
+  }
+
+   .jumbotron {
+
+    height: 0px;
+  }
+
+   .jess {
+    height: 250px;
+    width: auto;
+    border-radius: 50%;
+    box-shadow: 8px 8px 8px 8px;
+  }
+
+    .navbar {
+  height: 40px;
+  }
+
+  .navbar-default .navbar-toggle {
+    border-color:  #283B8A;
+    margin-top: 40px;
+    background-color: #283B8A; 
+
+  }
+
+      .fa {
+      padding: 25px;
+      font-size: 18px;
+       width: 25px;
+       text-align: center;
+      text-decoration: none;
+      float: right;
+      }
+
+      .fa:hover {
+      opacity: 0.7;
+      }
+
+      .fa-facebook {
+      background:  #283B8A; 
+      color:  white;
+      }
+
+      .fa-google {
+      background:  #283B8A; 
+       color:   white;
+      }
+      .fa-instagram {
+        background:  #283B8A; 
+        color:  white;
+      }
+      .fa-envelope {
+        background:   #283B8A; 
+        color:   white;
+      }
+
+
+  }
+
+ /* screen size */
+
+
+  .logo {
+    height: 70px;
+    width: 70px;
+  } 
+
+  .jess {
+    height: 300px;
+    width: auto;
+    border-radius: 50%;
+    box-shadow: 8px 8px 8px 8px;
+  }
+
+  .name {
+    margin-left: 25%;
+    margin-top: 10%;
+    font-size: 20px;
+    color: black;
+    font-weight: 700;
+    
+  }
+  .jumbotron {
+
+    height: 20px;
+  }
+
+  .col-sm-8 h2 {
+    font-size: 60px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    color: black;
+  }
+
+  .btn {
+    width: 200px;
+    background-color:  #283B8A;
+    color: white;
+  }
+
+  .jumbotron h1 {
+    font-weight: 900;
+  }
+  .jumbotron p {
+    font-size: 30px;
+  }
+  .container-fluid {
+    padding: 60px 50px;
+  }
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+  .logo-small {
+    color: #3792cb;
+    font-size: 50px;
+  }
+ 
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #f4511e;
+  }
+  .carousel-indicators li {
+    border-color: #f4511e;
+  }
+  .carousel-indicators li.active {
+    background-color: #f4511e;
+  }
+  .item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+  }
+  .item span {
+    font-style: normal;
+  }
+  .panel {
+    border: 1px solid #f4511e; 
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+    border: 1px solid #f4511e;
+    background-color: #black !important;
+    color: white;
+  }
+  .panel-heading {
+    color: #fff !important;
+    background-color: #f4511e !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+    background-color: white !important;
+  }
+  .panel-footer h3 {
+    font-size: 32px;
+  }
+  .panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+  }
+  .panel-footer .btn {
+    margin: 15px 0;
+    background-color: #f4511e;
+    color: #fff;
+  }
+  .navbar {
+    margin-bottom: 0;
+    background-color: #ffffff;
+    z-index: 9999;
+    border: 0;
+    font-size: 15px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    color: black;
+    height: 100px;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #283b8a;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color:  #283b8a !important;
+    background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color:  #283B8A;
+    color: #fff !important;
+    padding-bottom: 10px;
+  }
+  footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color:  #283b8a;
+  }
+  
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    }
+  }
+
+ 
+.fa {
+  padding: 25px;
+  font-size: 18px;
+  width: 25px;
+  text-align: center;
+  text-decoration: none;
+  float: right;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background:  white;
+  color:  #283B8A;
+}
+
+.fa-google {
+   background:  white;
+  color:   #283B8A;
+}
+.fa-instagram {
+   background: white;
+  color:  #283B8A;
+}
+.fa-envelope {
+  background:  white;
+  color:   #283B8A;
+}
+.img_serv {
+  margin-left: auto;
+  margin-right: auto;
+}

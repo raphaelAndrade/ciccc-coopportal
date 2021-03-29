@@ -1,0 +1,263 @@
+/*
+
+*{
+ outline: 1px solid red;
+}
+*/
+
+
+* {
+	margin: 0;
+}
+
+
+@font-face {
+  font-family: SourceSansPro-Regular;
+  src: url(fonts/SourceSansPro-Regular.ttf);
+}
+
+
+ body {
+    font: 400 15px "SourceSansPro-Regular";
+    line-height: 1.8;
+    color: #818181;
+  }
+
+
+
+  .logo {
+    height: 50px;
+    width: 50px;
+  } 
+
+  .glyphicon {
+
+    font-size: 30px;
+  }
+
+   /* screen size */
+    @media screen and (max-width: 600px) {
+    .logo {
+     height: 10px;
+    width: 10px;
+    }
+
+    #myNavbar {
+      background-color:  #283B8A;
+      color: white;
+    }
+
+
+    .navbar {
+  height: 40px;
+  }
+
+  .navbar-default .navbar-toggle {
+    border-color:  #283B8A;
+    margin-top: 40px;
+    background-color: #283B8A; 
+
+  }
+  .logo {
+    height: 50px;
+    width: 50px;
+  } 
+
+  .collapsible {
+  border:none;
+  color: white;
+  font-weight: 300;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  margin-left: 0%;
+  outline: none;
+  font-size: 15px;
+ background-color: #283B8A; 
+} 
+
+.contentcc {
+  font-style: bold;
+  padding: 0 0px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  width: 100%;
+  margin-left:0%;
+  font-weight: 200;
+}
+
+}
+
+.navbar {
+    margin-bottom: 0;
+    background-color:#283B8A;
+    z-index: 9999;
+    border: 0;
+    font-size: 15px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    color: white;
+    height: 80px;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color:white !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: white!important;
+    background-color: #283B8A !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+  footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #283B8A;
+  }
+ 
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    }
+  }
+
+ 
+}
+.fa {
+  padding: 25px;
+  font-size: 18px;
+  width: 25px;
+  text-align: center;
+  text-decoration: none;
+  float: right;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+ background: #283B8A;
+  color: white;
+}
+
+.fa-google {
+  background: #283B8A;
+  color: white;
+}
+.fa-instagram {
+   background: #283B8A;
+  color: white;
+}
+.fa-envolope {
+ background: #283B8A;
+  color: white;
+}
+.img_serv {
+  margin-left: auto;
+  margin-right: auto;
+}
+  
+
+/* career prer*/
+
+.career h1{
+  font-weight: 900;
+ text-align: center;
+ letter-spacing: 4px;
+ font-family: lato;
+
+
+}
+
+input[type="checkbox"] { 
+  height: 20px; 
+  width: 20px; 
+
+} 
+
+.ready { font-size: 1.5em; }
+.ui-progressbar-value { background: #283B8A;  }
+.progressbar-container {
+  position: relative;
+  width: 350px; 
+}
+
+.progressbar-bar { 
+  height: 25px;
+margin: 10px 0;
+border-radius: 7px;
+border-color: black;
+}
+
+.progressbar-label {
+  position: absolute;
+  top: 2px;
+  left: 45%;
+  z-index: 2;
+  font-size: 50px;
+  color: #283B8A; 
+  font-weight: 900;
+}
+/* Media queries - Responsive timeline on screens less than 600px wide */
+
+
+.collapsible {
+  border:none;
+  border-top: 5px;
+   border-style: solid;
+  border-top-color: #283B8A; 
+  color:  #283B8A;
+  font-weight: 300;
+  cursor: pointer;
+  padding: 18px;
+  width: 90%;
+  text-align: left;
+  margin-left: 5%;
+  outline: none;
+  font-size: 15px;
+  background-color: white;
+
+
+}
+
+.active, .collapsible:hover {
+  background-color: #7EC0EE;
+}
+
+.contentcc {
+  font-style: bold;
+  padding: 0 0px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  width: 90%;
+  margin-left:5%;
+  font-weight: 200;
+}
+
+ul.a {
+  list-style-type: square;
+}
+.download {
+  font-weight: 600px;
+}
+
+/*required docs*/
+
