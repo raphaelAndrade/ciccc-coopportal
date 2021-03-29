@@ -1,15 +1,7 @@
-/*
-
-*{
- outline: 1px solid red;
-}
-*/
-
 
 * {
 	margin: 0;
 }
-
 
 body {
     font: 400 15px Lato, sans-serif;
@@ -18,14 +10,10 @@ body {
     background: white;
 
   }
-
-
-
   .logo {
     height: 50px;
     width: 50px;
   } 
-
   .jumbotron {
 
     color: white;
@@ -270,9 +258,6 @@ border-color: black;
 
   }
 }
-
-
-
 ul.a {
   list-style-type: square;
 }
@@ -282,11 +267,7 @@ ul.a {
 
 /*Content */
 
-.career {
-
-}
  .resume1 h2 {
-
   font-style: italic;
   font-weight: 500;
   color: #485063;
@@ -530,14 +511,12 @@ tr:nth-child(even) {
   .resume9{
 
 }
-
 .resume9 h2 {
   font-style: italic;
   font-weight: 500;
   color: #485063;
   margin-left: 3%;
 }
-
  .resume9 p {
   margin-left: 3%;
   text-align: left; 
