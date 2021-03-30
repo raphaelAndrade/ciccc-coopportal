@@ -13,39 +13,50 @@
 </head>
 
 <body>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-12">
-        <img class="logo" src="Images/logowhite.jpg">
+  <section>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <img class="logo" src="Images/logowhite.jpg">
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <div class="welcome">
-          <h1>Co-op Portal </h1>
-          <p>Everything you need to<br>know & do for your co-op</p>
-          <div class="wrapper">
-            <form class="form1">
-              <div class="inputcontent">
-                <input type="text" id="password" style="border-radius:8px " placeholder="ACCESS CODE"
-                  style="text-align: center;" /><br />
-              </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="welcome">
+            <h1>Co-op Portal </h1>
+            <p>Everything you need to </p>
+            <p>know & do for your co-op</p>
+            <div class="wrapper">
+               <div class="row">
+                  <div class="col-md-12">
+                    <form class="form1">
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <input type="text" id="password" placeholder="Program Code" />
+                          </div>
+                          <div class="col-md-6">
+                            <input type="text" id="password" placeholder="Your Password" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="buttons">
+                        <input class="loginButton" type="button" value="Login now" onclick="checkPassword()" />
+                      </div>
+                    </form>
+                  </div>
+               </div>
+            </div>
           </div>
-          <div class="buttons">
-            <input class="orangebutton" type="button" value="Log in" style="border-radius: 8px"
-              onclick="checkPassword()" style="font-size: 30px" style="border-radius:10px" />
-          </div>
-          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <footer>&copy; CICCC 2020 Powered by Carlos Diaz</footer>
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-12">
-        <footer>&copy; CICCC 2020 Powered by Carlos Diaz</footer>
-      </div>
-    </div>
-  </div>
-
+  </section>
   <script src="main.js"></script>
 </body>
 
