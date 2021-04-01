@@ -15,7 +15,7 @@ body {
 .logo {
   height: 50px;
   width: 50px;
-}
+} 
 
 /* screen size */
 @media screen and (max-width: 600px) {
