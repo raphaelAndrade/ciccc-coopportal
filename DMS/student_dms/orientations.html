@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
   <title>Co-op Process</title>
@@ -12,124 +13,272 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <link rel="stylesheet" type="text/css" href="css/style_career.css">
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style_main.css">
+
 
 
 </head>
+<!-- Todo: trocar a image -->
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-<nav class="navbar navbar-default navbar-fixed-top">
+  <div id="progressNamePage">orientationPage</div>
   <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="main.html"><img src="Images/logo.jpg" class="logo"></a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav navbar-right">
-        <li><a href="process.html">Process</a></li>
-        <li><a href="docs.html">Required Docs</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="resources.html">Resources</a></li>
-        <li><a href="https://www.instagram.com/cicccvancouver/" target="_blank" class="fa fa-instagram"></a></li>
-        <li><a href="https://www.facebook.com/cicccvancouver" target="_blank" class="fa fa-facebook"></a></li>
-        <li> <a href="https://www.google.com/search?sxsrf=ALeKk02RabiqBJaqpEy1UfdJ-rsmKCta8w%3A1613597590693&source=hp&ei=lostYP2HJ4_O0PEPl6C_uAw&iflsig=AINFCbYAAAAAYC2ZpnHkSy3GxOzKcABbP0s9jLNL43FX&q=ciccc&oq=ciccc&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBAgjECcyCgguEMcBEK8BECcyAggAMgIIADICCAAyAggAMgQIABBDMgQIABAKMgIIADoKCC4QxwEQrwEQQzoFCC4QkQI6CwguELEDEMcBEKMCOg4ILhCxAxCDARDHARCjAjoICAAQsQMQgwE6CwguEMcBEK8BEJECOggILhCxAxCDAToFCAAQkQI6CAgAELEDEJECOgQILhBDOggILhDHARCvAVDqBFj9CGDlDmgAcAB4AIAB1wGIAfQEkgEFMi4yLjGYAQCgAQGqAQdnd3Mtd2l6&sclient=gws-wiz&ved=0ahUKEwj9qs257_HuAhUPJzQIHRfQD8cQ4dUDCAk&uact=5" target="_blank" class="fa fa-google"></a></li>
-        <li><a href="mailto:coop.advisor@ciccc.ca" class="fa fa-envelope"></a></li>
-      
-      </ul>
+    <!-- Nav -->
+    <div class="row">
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/main.html"><img src="Images/logowhite.jpg" class="logo"></a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a href="main.html">Home</a></li>
+              <li><a href="docs.html">Required Docs</a></li>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="resources.html">Resources</a></li>
+              <li class="social"><a href="https://www.instagram.com/cicccvancouver/" target="_blank"
+                  class="fa fa-instagram"></a>
+              </li>
+              <li class="social"><a href="https://www.facebook.com/cicccvancouver" target="_blank"
+                  class="fa fa-facebook"></a></li>
+              <li class="social"> <a
+                  href="https://www.google.com/search?sxsrf=ALeKk02RabiqBJaqpEy1UfdJ-rsmKCta8w%3A1613597590693&source=hp&ei=lostYP2HJ4_O0PEPl6C_uAw&iflsig=AINFCbYAAAAAYC2ZpnHkSy3GxOzKcABbP0s9jLNL43FX&q=ciccc&oq=ciccc&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBAgjECcyCgguEMcBEK8BECcyAggAMgIIADICCAAyAggAMgQIABBDMgQIABAKMgIIADoKCC4QxwEQrwEQQzoFCC4QkQI6CwguELEDEMcBEKMCOg4ILhCxAxCDARDHARCjAjoICAAQsQMQgwE6CwguEMcBEK8BEJECOggILhCxAxCDAToFCAAQkQI6CAgAELEDEJECOgQILhBDOggILhDHARCvAVDqBFj9CGDlDmgAcAB4AIAB1wGIAfQEkgEFMi4yLjGYAQCgAQGqAQdnd3Mtd2l6&sclient=gws-wiz&ved=0ahUKEwj9qs257_HuAhUPJzQIHRfQD8cQ4dUDCAk&uact=5"
+                  target="_blank" class="fa fa-google"></a></li>
+              <li class="social"><a href="mailto:coop.advisor@ciccc.ca" class="fa fa-envelope"></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </div>
   </div>
-</nav><br><br><br>
-<div class="career">
-   <h1>Co-op Orientations</h1>
- </div>
-<br>
+
+  <div class="container-fluid">
+    <div class="row ">
+      <div class="col-md-12 paddingNone">
+        <div class="banner carrer">
+          <div class="overlay">
+            <h1>Graduation</h1>
+            <p>Co-op Orientation is the second module in the co-op process. Here you will learn about the co-op
+              requirements, including documentation, </br>along with how to search for a job, and ultimately have a
+              successful interview once an employer calls you for an interview.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="bgProgressBar">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Progress</h3>
+          <div class="progress">
+            <div class="progress-bar orientationPage" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+              <span class="sr-only">60% Complete</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
-<div class="progressbar-container">
-  <div class="progressbar-bar ui-progressbar ui-widget ui-widget-content ui-corner-all" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100"><div class="ui-progressbar-value ui-widget-header ui-corner-left ui-corner-right" style="display: block; width: 100%;"></div></div>
-  <div class="ui-progressbar-value ui-widget-header ui-corner-left ui-corner-right" style="display: block; width: 100%;"></div>
-  <div class="progressbar-label"></div>
-</div>
-<div class = "ready"></div>
-<br><br>
-<h4 style="color:#283B8A; margin-left: 7%; font-weight: 500;">
-  Month 4
-</h4>
-<button type="button" class="collapsible">Attend Co-op Orientation</button>
-<div class="contentcc">
-  <p><input type="checkbox">A Co-op Orientation session will equip you with knowledge about your co-op requirements and
-documentation needed to graduate. This will be scheduled with your instructor in-class approximately
-halfway through your academic studies. You will receive a notication via e-mail about the mandatory
-session when it gets closer.</p>
-    
-</div><div><h4></h4></div>
+  <section class="title">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <ul class="listQuestions">
+            <li>
+              <div class="container-fluid paddingNone">
+                <div class="row">
+                  <div class="col-md-12">
+                    <h3>Attend DMS Orientation</h3>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-1">
+                    <input type="checkbox" id="box1" name="box1" class="trigger" />
+                  </div>
+                  <div class="col-md-11">
+                    <label for="box1">
+                      A Co-op Orientation session will equip you with knowledge about your co-op requirements and
+                      documentation needed to graduate. This will be scheduled with your instructor in-class
+                      approximately
+                      halfway through your academic studies. You will receive a notication via e-mail about the
+                      mandatory
+                      session when it gets closer.
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="container-fluid paddingNone">
+                <div class="row">
+                  <div class="col-md-12">
+                    <h3>Read Work Experience Policy (T&Cs)</h3>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-1">
+                    <input type="checkbox" id="box1" name="box1" class="trigger" />
+                  </div>
+                  <div class="col-md-11">
+                    <label for="box1">
+                      Following the Co-op Orientation session, you will receive an e-mail about the Work
+                      Experience Policy
+                      for your co-op. You must read the document and agree to the terms prior to beginning your co-op.
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="container-fluid paddingNone">
+                <div class="row">
+                  <div class="col-md-12">
+                    <h3>Book an Appointment with a Co-op Advisor</h3>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-1">
+                    <input type="checkbox" id="box1" name="box1" class="trigger" />
+                  </div>
+                  <div class="col-md-11">
+                    <label for="box1">
+                      Book an appointment with a Co-op Advisor to discuss your co-op goals and review your complete
+                      career portfolio.
+                      <a href="appointments.html">Book Appointment</a>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="container-fluid paddingNone">
+                <div class="row">
+                  <div class="col-md-12">
+                    <h3>Complete a Talent CiCCC Portfolio</h3>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-1">
+                    <input type="checkbox" id="box1" name="box1" class="trigger" />
+                  </div>
+                  <div class="col-md-11">
+                    <label for="box1">
+                      Record your talent in the Talent CICCC platform to showcase your experience and skills to our
+                      partner
+                      organizations seeking to hire from CICCC.
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="container-fluid paddingNone">
+                <div class="row">
+                  <div class="col-md-12">
+                    <h3>Attend Job Fairs & Networking Events</h3>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-1">
+                    <input type="checkbox" id="box1" name="box1" class="trigger" />
+                  </div>
+                  <div class="col-md-11">
+                    <label for="box1">
+                      Most jobs are found through the "hidden" market (jobs not formally advertised). Use your network
+                      and
+                      connections to find employment in your field. You can find local events on Eventbrite.ca,
+                      MeetUp.com,
+                      and CICCC's Tech & Career Events Calendar.
+                      <a href="events.html">Events</a>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="container-fluid paddingNone">
+                <div class="row">
+                  <div class="col-md-12">
+                    <h3>Apply for Jobs</h3>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-1">
+                    <input type="checkbox" id="box1" name="box1" class="trigger" />
+                  </div>
+                  <div class="col-md-11">
+                    <label for="box1">
+                      There are a variety of ways to do job searching for your co-op placement. Set a goal of applying
+                      to at
+                      least 5-10 jobs per day, as finding a co-op can take up to 6-12 weeks (or more), on average.
+                      <a href="events.html">Events</a>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="container-fluid paddingNone">
+                <div class="row">
+                  <div class="col-md-12">
+                    <h3>Start Interviewing</h3>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-1">
+                    <input type="checkbox" id="box1" name="box1" class="trigger" />
+                  </div>
+                  <div class="col-md-11">
+                    <label for="box1">
+                      The secret to a successful interview is preparation. Research the company in advance and make a
+                      list of
+                      your relevant experiences. You can even book a mock interview with a Co-op Advisor to practice if
+                      needed.
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </li>
+            
+          </ul>
+        </div>
+        <div class="col-md-7">
+          <div class="bg-hands">
+            <img src="Images/hands.jpg" class="hands img-responsive" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<button type="button" class="collapsible">Read Work Experience Policy (T&Cs)</button>
-<div class="contentcc">
-  <p><input type="checkbox">Following the Co-op Orientation session, you will receive an e-mail about the Work Experience Policy
-for your co-op. You must read the document and agree to the terms prior to beginning your co-op.</p>
-<!--
-  <ul class="a">
-    <li><input type="checkbox"><a href="documents/dmshostagreement.pdf" download target="_blank">Download</a> & read the Co-op Terms & Conditions</li>
-    <li><input type="checkbox"><a href="mailto:coop.advisor@ciccc.ca"> Email</a> a signed copy of the Co-op Terms & Conditions</li>
-  </ul>-->
-</div><div><h4></h4></div>
 
-<button type="button" class="collapsible">Book an Appointment with a Co-op Advisor</button>
-<div class="contentcc">
-    <p>Book an appointment with a Co-op Advisor to discuss your co-op goals and review your complete
-career portfolio. </p>  
-  <li><input type="checkbox"><a href="appointments.html">Book Appointment</a></li>
-</div><div><h4></h4></div>
-
-<button type="button" class="collapsible">Complete a Talent CiCCC Portfolio</button>
-<div class="contentcc">
-<p>Record your talent in the Talent CICCC platform to showcase your experience and skills to our partner
-organizations seeking to hire from CICCC.</p>
-<li><input type="checkbox"><a href="https://talent-ciccc.ca/" target="_blank">Talent CICCC</a></li>
-</div><div><h4 style="color:#283B8A; margin-left: 7%; font-weight: 500;">
-  Month 4-6
-</h4></div>
-
-<button type="button" class="collapsible">Attend Job Fairs & Networking Events</button>
-<div class="contentcc">
-  <p>Most jobs are found through the "hidden" market (jobs not formally advertised). Use your network and
-connections to find employment in your field. You can find local events on Eventbrite.ca, MeetUp.com,
-and CICCC's Tech & Career Events Calendar.</p>
-<li><input type="checkbox"><a href="events.html">Events</a></li>
-  
-</div><div><h4></h4></div>
-
-<button type="button" class="collapsible">Apply for Jobs</button>
-<div class="contentcc">
- <input type="checkbox"> <p>There are a variety of ways to do job searching for your co-op placement. Set a goal of applying to at
-least 5-10 jobs per day, as finding a co-op can take up to 6-12 weeks (or more), on average.</p>
-  
-</div>
-
-</div><div><h4></h4></div>
-
-<button type="button" class="collapsible">Start Interviewing</button>
-<div class="contentcc">
- <input type="checkbox"> <p>The secret to a successful interview is preparation. Research the company in advance and make a list of
-your relevant experiences. You can even book a mock interview with a Co-op Advisor to practice if needed.</p>
-  
-</div><div><h4></h4></div>
-<br><br>
-
-<footer class="container-fluid text-center">
-  <a href="#myPage" title="To Top">
-    <span class="glyphicon glyphicon-chevron-up"></span>
-  </a>
-  <p>&copy; 2021 ciccc.com  Powered by Carlos A. Diaz</a> </p>
-</footer>
-<script src="main.js"></script>
+  <section class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <footer class="text-center">
+            <a href="#myPage" title="To Top">
+              <span class="glyphicon glyphicon-chevron-up"></span>
+            </a>
+            <p>&copy; 2021 ciccc.com Powered by Carlos A. Diaz</a> </p>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="main.js"></script>
+  <script src="progressStorage.js"></script>
 
 </body>
+
 </html>

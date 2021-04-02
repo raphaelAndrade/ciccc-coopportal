@@ -127,6 +127,11 @@
     border: 2px solid transparent;
   }
 
+  .btn:active {
+    outline: none !important;
+    box-shadow: none;
+  }
+
   .btn:hover{
     background-color: white;
     border: 2px solid #283B8A;
@@ -602,8 +607,16 @@
   text-align: center;
 }
 
+.bg-hands {
+  position: relative;
+}
+
 .bg-hands img{
   opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 5%;
+  width: 100%;
 }
 
 .listQuestions {
@@ -611,8 +624,6 @@
   padding: 0;
   list-style: none;
   height: 500px;
-  /* overflow: hidden;
-  overflow: scroll; */
 }
 
 .listQuestions li h3 {
@@ -622,6 +633,28 @@
   color: white;
   border-radius: 10px;
   font-size: 16px;
+}
+
+.progress-bar {
+  background: #283b8a;
+}
+
+
+.bgProgressBar {
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+  padding: 20px 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 80px;
+  z-index: 10;
+  background: white;
+}
+
+.progressNamePage {
+  position: absolute;
+  left: -6000px;
+  opacity: 0;;
 }
 
 

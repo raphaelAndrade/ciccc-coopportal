@@ -16,9 +16,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- <link rel="stylesheet" type="text/css" href="css/style_career.css"> -->
   <link rel="stylesheet" type="text/css" href="css/style_main.css">
+
 </head>
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+  <div id="progressNamePage">careerPage</div>
   <div class="container">
     <!-- Nav -->
     <div class="row">
@@ -72,6 +74,21 @@
     </div>
   </div>
 
+  <section class="bgProgressBar">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Progress</h3>
+          <div class="progress">
+            <div class="progress-bar carrerPage"  role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+              <span class="sr-only">60% Complete</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="title">
     <div class="container">
       <div class="row">
@@ -86,7 +103,7 @@
                 </div>
                 <div class="row">
                   <div class="col-md-1">
-                    <input type="checkbox" id="box1" name="box1" />
+                    <input type="checkbox" id="box1" name="box1" class="trigger" />
                   </div>
                   <div class="col-md-11">
                     <label for="box1">
@@ -107,7 +124,7 @@
                 </div>
                 <div class="row">
                   <div class="col-md-1">
-                    <input type="checkbox" id="box2" name="box2" />
+                    <input type="checkbox" id="box2" name="box2" class="trigger" />
                   </div>
                   <div class="col-md-11">
                     <label for="box2">
@@ -130,7 +147,7 @@
                 </div>
                 <div class="row">
                   <div class="col-md-1">
-                    <input type="checkbox" id="box3" name="box2" />
+                    <input type="checkbox" id="box3" name="box3" class="trigger" />
                   </div>
                   <div class="col-md-11">
                     <label for="box3">
@@ -151,7 +168,7 @@
                 </div>
                 <div class="row">
                   <div class="col-md-1">
-                    <input type="checkbox" id="box4" name="box4" />
+                    <input type="checkbox" id="box4" name="box4" class="trigger" />
                   </div>
                   <div class="col-md-11">
                     <label for="box4">
@@ -171,7 +188,7 @@
                 </div>
                 <div class="row">
                   <div class="col-md-1">
-                    <input type="checkbox" id="box5" name="box5" />
+                    <input type="checkbox" id="box5" name="box5" class="trigger" />
                   </div>
                   <div class="col-md-11">
                     <label for="box5">
@@ -194,10 +211,10 @@
                 </div>
                 <div class="row">
                   <div class="col-md-1">
-                    <input type="checkbox" id="box5" name="box5" />
+                    <input type="checkbox" id="box6" name="box6" class="trigger" />
                   </div>
                   <div class="col-md-11">
-                    <label for="box5">
+                    <label for="box6">
                       Build your career portfolio that will showcase your experiences and land you the job you want in
                       the
                       Canadian job market. Your career portfolio should consist of four items: 1) resume, 2) cover
@@ -217,10 +234,10 @@
                 </div>
                 <div class="row">
                   <div class="col-md-1">
-                    <input type="checkbox" id="box5" name="box5" />
+                    <input type="checkbox" id="box7" name="box7" class="trigger" />
                   </div>
                   <div class="col-md-11">
-                    <label for="box5">
+                    <label for="box7">
                       The key to finding a job in a competitive market is standing out in a crowd. Plan to maximize your
                       digital marketing experiences during your academic studies by participating in-class projects,
                       nonpro
@@ -250,13 +267,14 @@
             <a href="#myPage" title="To Top">
               <span class="glyphicon glyphicon-chevron-up"></span>
             </a>
-            <p>&copy; 2021 ciccc.com Powered by Carlos A. Diaz</a> </p>
+            <p>&copy; 2021 ciccc.com Powered by Ciccc</a> </p>
           </footer>
         </div>
       </div>
     </div>
   </section>
   <script src="main.js"></script>
+  <script src="progressStorage.js"></script>
 
 </body>
 
