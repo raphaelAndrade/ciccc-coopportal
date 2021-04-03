@@ -63,15 +63,12 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
-$(document).ready(function() {
-  
-  // get box count
-  var count = 0;
-  var checked = 0;
-  function countBoxes() { 
-    
-  }
-  
-  
-});
+$(document).ready(() => {
+  $(".home").on("mouseover",() => {
+    $(".mainMenu li .subMenu.homeSubMenu").fadeIn();
+  });
 
+  $(".mainMenu li .subMenu").on("mouseleave", ()=> {
+    $(".mainMenu li .subMenu").fadeOut();
+  })
+})

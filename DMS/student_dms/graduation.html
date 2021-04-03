@@ -36,8 +36,16 @@
             <a class="navbar-brand" href="/main.html"><img src="Images/logowhite.jpg" class="logo"></a>
           </div>
           <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-              <li><a href="main.html">Home</a></li>
+            <ul class="nav navbar-nav mainMenu">
+              <li>
+                <a href="main.html" class="home">Home</a>
+                <ul class="subMenu homeSubMenu">
+                  <li><a href="career.html">Career Prep</a></li>
+                  <li><a href="orientations.html">Co-op Orientations</a></li>
+                  <li><a href="term.html">Co-op Term</a></li>
+                  <li><a href="graduation.html">Graduation</a></li>
+                </ul>
+              </li>
               <li><a href="docs.html">Required Docs</a></li>
               <li><a href="events.html">Events</a></li>
               <li><a href="faq.html">FAQ</a></li>
@@ -58,11 +66,11 @@
     </div>
   </div>
 
-  <div class="container-fluid">
-    <div class="row ">
-      <div class="col-md-12 paddingNone">
-        <div class="banner carrer">
-          <div class="overlay">
+  <section class="banner carrer">
+    <div class="overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
             <h1>Graduation</h1>
             <p>Graduation is the fourth and final module in the co-op process.<br> Here you will learn about the
               documents required at the end of your co-op, proper submissions, and when you can expect to receive your
@@ -71,7 +79,9 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
+
+
 
   <section class="bgProgressBar">
     <div class="container">
@@ -103,10 +113,10 @@
                 </div>
                 <div class="row">
                   <div class="col-md-1">
-                    <input type="checkbox" id="box1" name="box1" class="trigger" />
+                    <input type="checkbox" id="box1" name="inputGraduation1" class="trigger" />
                   </div>
                   <div class="col-md-11">
-                    <label for="box1">
+                    <label for="inputGraduation1">
                       The Performance Evaluation is completed by your employer at the end of your co-op, at least one
                       week before your co-op end date. Each employer used for your co-op hours should complete a
                       Performance Evaluation. Submit this document on Classe365 once complete.
@@ -125,10 +135,10 @@
                 </div>
                 <div class="row">
                   <div class="col-md-1">
-                    <input type="checkbox" id="box1" name="box1" class="trigger" />
+                    <input type="checkbox" id="inputGraduation2" name="box1" class="trigger" />
                   </div>
                   <div class="col-md-11">
-                    <label for="box1">
+                    <label for="inputGraduation2">
                       <ul>
                         <li><a href="resources.html">Learn how to complete your final report</a></li>
                         <li><a href="documents/dmsfinalreport" target="_blank" download="">Download</a></li>
@@ -148,10 +158,10 @@
                 </div>
                 <div class="row">
                   <div class="col-md-1">
-                    <input type="checkbox" id="box1" name="box1" class="trigger" />
+                    <input type="checkbox" id="inputGraduation3" name="box1" class="trigger" />
                   </div>
                   <div class="col-md-11">
-                    <label for="box1">
+                    <label for="inputGraduation3">
                       Your diploma will be sent via e-mail from the Admission's Oce approximately 2-3 weeks after your
                       co-op end date.
                       Any questions?

@@ -20,11 +20,12 @@
 
 </head>
 <!-- Todo: trocar a image -->
+
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
   <div id="progressNamePage">orientationPage</div>
   <div class="container">
-    <!-- Nav -->
-    <div class="row">
+     <!-- Nav -->
+     <div class="row">
       <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
           <div class="navbar-header">
@@ -36,8 +37,16 @@
             <a class="navbar-brand" href="/main.html"><img src="Images/logowhite.jpg" class="logo"></a>
           </div>
           <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-              <li><a href="main.html">Home</a></li>
+            <ul class="nav navbar-nav mainMenu">
+              <li>
+                <a href="main.html" class="home">Home</a>
+                <ul class="subMenu homeSubMenu">
+                  <li><a href="career.html">Career Prep</a></li>
+                  <li><a href="orientations.html">Co-op Orientations</a></li>
+                  <li><a href="term.html">Co-op Term</a></li>
+                  <li><a href="graduation.html">Graduation</a></li>
+                </ul>
+              </li>
               <li><a href="docs.html">Required Docs</a></li>
               <li><a href="events.html">Events</a></li>
               <li><a href="faq.html">FAQ</a></li>
@@ -58,20 +67,22 @@
     </div>
   </div>
 
-  <div class="container-fluid">
-    <div class="row ">
-      <div class="col-md-12 paddingNone">
-        <div class="banner carrer">
-          <div class="overlay">
-            <h1>Graduation</h1>
+  <section class="banner carrer">
+    <div class="overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Co-op Orientations</h1>
             <p>Co-op Orientation is the second module in the co-op process. Here you will learn about the co-op
-              requirements, including documentation, </br>along with how to search for a job, and ultimately have a
+              requirements, including documentation, along with how to search for a job, and ultimately have a
               successful interview once an employer calls you for an interview.</p>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
+
+
 
   <section class="bgProgressBar">
     <div class="container">
@@ -79,7 +90,8 @@
         <div class="col-md-12">
           <h3>Progress</h3>
           <div class="progress">
-            <div class="progress-bar orientationPage" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar orientationPage" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+              aria-valuemax="100">
               <span class="sr-only">60% Complete</span>
             </div>
           </div>
@@ -103,10 +115,10 @@
                 </div>
                 <div class="row">
                   <div class="col-md-1">
-                    <input type="checkbox" id="box1" name="box1" class="trigger" />
+                    <input type="checkbox" id="inputOrientation1" name="box1" class="trigger" />
                   </div>
                   <div class="col-md-11">
-                    <label for="box1">
+                    <label for="inputOrientation1">
                       A Co-op Orientation session will equip you with knowledge about your co-op requirements and
                       documentation needed to graduate. This will be scheduled with your instructor in-class
                       approximately
@@ -127,10 +139,10 @@
                 </div>
                 <div class="row">
                   <div class="col-md-1">
-                    <input type="checkbox" id="box1" name="box1" class="trigger" />
+                    <input type="checkbox" id="inputOrientation2" name="box1" class="trigger" />
                   </div>
                   <div class="col-md-11">
-                    <label for="box1">
+                    <label for="inputOrientation2">
                       Following the Co-op Orientation session, you will receive an e-mail about the Work
                       Experience Policy
                       for your co-op. You must read the document and agree to the terms prior to beginning your co-op.
@@ -148,10 +160,10 @@
                 </div>
                 <div class="row">
                   <div class="col-md-1">
-                    <input type="checkbox" id="box1" name="box1" class="trigger" />
+                    <input type="checkbox" id="inputOrientation3" name="box1" class="trigger" />
                   </div>
                   <div class="col-md-11">
-                    <label for="box1">
+                    <label for="inputOrientation3">
                       Book an appointment with a Co-op Advisor to discuss your co-op goals and review your complete
                       career portfolio.
                       <a href="appointments.html">Book Appointment</a>
@@ -169,10 +181,10 @@
                 </div>
                 <div class="row">
                   <div class="col-md-1">
-                    <input type="checkbox" id="box1" name="box1" class="trigger" />
+                    <input type="checkbox" id="inputOrientation4" name="box1" class="trigger" />
                   </div>
                   <div class="col-md-11">
-                    <label for="box1">
+                    <label for="inputOrientation4">
                       Record your talent in the Talent CICCC platform to showcase your experience and skills to our
                       partner
                       organizations seeking to hire from CICCC.
@@ -190,10 +202,10 @@
                 </div>
                 <div class="row">
                   <div class="col-md-1">
-                    <input type="checkbox" id="box1" name="box1" class="trigger" />
+                    <input type="checkbox" id="inputOrientation5" name="box1" class="trigger" />
                   </div>
                   <div class="col-md-11">
-                    <label for="box1">
+                    <label for="inputOrientation5">
                       Most jobs are found through the "hidden" market (jobs not formally advertised). Use your network
                       and
                       connections to find employment in your field. You can find local events on Eventbrite.ca,
@@ -214,10 +226,10 @@
                 </div>
                 <div class="row">
                   <div class="col-md-1">
-                    <input type="checkbox" id="box1" name="box1" class="trigger" />
+                    <input type="checkbox" id="inputOrientation6" name="box1" class="trigger" />
                   </div>
                   <div class="col-md-11">
-                    <label for="box1">
+                    <label for="inputOrientation6">
                       There are a variety of ways to do job searching for your co-op placement. Set a goal of applying
                       to at
                       least 5-10 jobs per day, as finding a co-op can take up to 6-12 weeks (or more), on average.
@@ -236,10 +248,10 @@
                 </div>
                 <div class="row">
                   <div class="col-md-1">
-                    <input type="checkbox" id="box1" name="box1" class="trigger" />
+                    <input type="checkbox" id="inputOrientation7" name="box1" class="trigger" />
                   </div>
                   <div class="col-md-11">
-                    <label for="box1">
+                    <label for="inputOrientation7">
                       The secret to a successful interview is preparation. Research the company in advance and make a
                       list of
                       your relevant experiences. You can even book a mock interview with a Co-op Advisor to practice if
@@ -249,7 +261,7 @@
                 </div>
               </div>
             </li>
-            
+
           </ul>
         </div>
         <div class="col-md-7">
