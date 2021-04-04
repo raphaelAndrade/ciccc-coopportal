@@ -17,8 +17,8 @@
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
   <div class="container">
-    <!-- Nav -->
-    <div class="row">
+     <!-- Nav -->
+     <div class="row">
       <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
           <div class="navbar-header">
@@ -30,9 +30,28 @@
             <a class="navbar-brand" href="/main.html"><img src="Images/logowhite.jpg" class="logo"></a>
           </div>
           <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-              <li><a href="main.html">Home</a></li>
-              <li><a href="docs.html">Required Docs</a></li>
+            <ul class="nav navbar-nav mainMenu">
+              <li>
+                <a href="main.html" class="home">Home</a>
+                <ul class="subMenu homeSubMenu">
+                  <li><a href="career.html">Career Prep</a></li>
+                  <li><a href="orientations.html">Co-op Orientations</a></li>
+                  <li><a href="term.html">Co-op Term</a></li>
+                  <li><a href="graduation.html">Graduation</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="docs.html" class="requiredDoc">Required Docs</a>
+                <ul class="subMenu requiredSubMenu">
+                  <li><a href="documents/dmshostagreement.pdf" download>Host Agreement</a></li>
+                  <li>
+                    <a href="documents/dmshostagreement.pdf" download>Performance Evaluation</a>
+                  </li>
+                  <li>
+                    <a href="documents/dmsfinalreport.pdf" download>Final Report</a>
+                  </li>
+                </ul>
+              </li>
               <li><a href="events.html">Events</a></li>
               <li><a href="faq.html">FAQ</a></li>
               <li><a href="resources.html">Resources</a></li>

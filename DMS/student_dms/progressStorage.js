@@ -57,7 +57,7 @@ const loadProgress = () => {
     return;
 }
 
-const storeChecked = (id) => {
+const storeChecked = () => {
     var $checkboxes = $(".listQuestions li :checkbox");
     let checkboxValues = JSON.parse(localStorage.getItem('checkboxValues')) || {};
     $checkboxes.on("change", function () {
@@ -71,7 +71,7 @@ const storeChecked = (id) => {
 $(document).ready(() => {
     loadProgress();
     $(".listQuestions li input").on("click", function () {
-        storeChecked(this.id);
+        storeChecked();
         countChecked();
     });
 })

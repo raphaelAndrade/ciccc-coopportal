@@ -12,118 +12,137 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="css/docs.css">
+  <link rel="stylesheet" type="text/css" href="css/style_main.css">
 </head>
-
+ 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-  <div class="container-fluid">
+    <div class="container">
+       <!-- Nav -->
     <div class="row">
-      <div class="col-md-12">
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="main.html"><img src="Images/logo.jpg" class="logo"></a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-              <ul class="nav navbar-nav navbar-right">
-                <li><a href="process.html">Process</a></li>
-                <li><a href="docs.html">Required Docs</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="resources.html">Resources</a></li>
-                <li><a href="https://www.instagram.com/cicccvancouver/" target="_blank" class="fa fa-instagram"></a>
-                </li>
-                <li><a href="https://www.facebook.com/cicccvancouver" target="_blank" class="fa fa-facebook"></a></li>
-                <li> <a
-                    href="https://www.google.com/search?sxsrf=ALeKk02RabiqBJaqpEy1UfdJ-rsmKCta8w%3A1613597590693&source=hp&ei=lostYP2HJ4_O0PEPl6C_uAw&iflsig=AINFCbYAAAAAYC2ZpnHkSy3GxOzKcABbP0s9jLNL43FX&q=ciccc&oq=ciccc&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBAgjECcyCgguEMcBEK8BECcyAggAMgIIADICCAAyAggAMgQIABBDMgQIABAKMgIIADoKCC4QxwEQrwEQQzoFCC4QkQI6CwguELEDEMcBEKMCOg4ILhCxAxCDARDHARCjAjoICAAQsQMQgwE6CwguEMcBEK8BEJECOggILhCxAxCDAToFCAAQkQI6CAgAELEDEJECOgQILhBDOggILhDHARCvAVDqBFj9CGDlDmgAcAB4AIAB1wGIAfQEkgEFMi4yLjGYAQCgAQGqAQdnd3Mtd2l6&sclient=gws-wiz&ved=0ahUKEwj9qs257_HuAhUPJzQIHRfQD8cQ4dUDCAk&uact=5"
-                    target="_blank" class="fa fa-google"></a></li>
-                <li><a href="mailto:coop.advisor@ciccc.ca" class="fa fa-envelope"></a></li>
-              </ul>
-            </div>
-        </nav>
-      </div>
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/main.html"><img src="Images/logowhite.jpg" class="logo"></a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav mainMenu">
+              <li>
+                <a href="main.html" class="home">Home</a>
+                <ul class="subMenu homeSubMenu">
+                  <li><a href="career.html">Career Prep</a></li>
+                  <li><a href="orientations.html">Co-op Orientations</a></li>
+                  <li><a href="term.html">Co-op Term</a></li>
+                  <li><a href="graduation.html">Graduation</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="docs.html" class="requiredDoc">Required Docs</a>
+                <ul class="subMenu requiredSubMenu">
+                  <li><a href="documents/dmshostagreement.pdf" download>Host Agreement</a></li>
+                  <li>
+                    <a href="documents/dmshostagreement.pdf" download>Performance Evaluation</a>
+                  </li>
+                  <li>
+                    <a href="documents/dmsfinalreport.pdf" download>Final Report</a>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="resources.html">Resources</a></li>
+              <li class="social"><a href="https://www.instagram.com/cicccvancouver/" target="_blank"
+                  class="fa fa-instagram"></a>
+              </li>
+              <li class="social"><a href="https://www.facebook.com/cicccvancouver" target="_blank"
+                  class="fa fa-facebook"></a></li>
+              <li class="social"> <a
+                  href="https://www.google.com/search?sxsrf=ALeKk02RabiqBJaqpEy1UfdJ-rsmKCta8w%3A1613597590693&source=hp&ei=lostYP2HJ4_O0PEPl6C_uAw&iflsig=AINFCbYAAAAAYC2ZpnHkSy3GxOzKcABbP0s9jLNL43FX&q=ciccc&oq=ciccc&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBAgjECcyCgguEMcBEK8BECcyAggAMgIIADICCAAyAggAMgQIABBDMgQIABAKMgIIADoKCC4QxwEQrwEQQzoFCC4QkQI6CwguELEDEMcBEKMCOg4ILhCxAxCDARDHARCjAjoICAAQsQMQgwE6CwguEMcBEK8BEJECOggILhCxAxCDAToFCAAQkQI6CAgAELEDEJECOgQILhBDOggILhDHARCvAVDqBFj9CGDlDmgAcAB4AIAB1wGIAfQEkgEFMi4yLjGYAQCgAQGqAQdnd3Mtd2l6&sclient=gws-wiz&ved=0ahUKEwj9qs257_HuAhUPJzQIHRfQD8cQ4dUDCAk&uact=5"
+                  target="_blank" class="fa fa-google"></a></li>
+              <li class="social"><a href="mailto:coop.advisor@ciccc.ca" class="fa fa-envelope"></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </div>
-    <div class="row">
-      <div class="col-md-12">
-        <div id="services" class="text-center">
-          <h2 class="title2" style="font-size: 30px;">Required Documentation</h2>
+    </div>
+
+    <section class="banner carrer">
+      <div class="overlay">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h1>Required Docs</h1>
+              <p>You need to submit three essential documents in Classe365 to complete your course and receive your diploma. Without these documents, you will not be able to graduate.</p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- Container (About Section) -->
-    <div class="row">
-      <div class="col-sm-8">
-        <h2 style="text-align: left;">Host Agreement</h2><br>
-        <p style="text-align: left;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua.<br> Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. </p><br><a href="documents/dmshostagreement.pdf" target="_blank" download> <button class="btn"
-            style="float: left;"> Download</button></a><br>
-      </div>
-      <div class="col-sm-4">
-        <span class="glyphicon glyphicon-file logo1 slideanim"></span>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-8">
-        <h2 style="text-align: left;">Performance Evaluation</h2><br>
-        <p style="text-align: left;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua.<br> Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. </p><br><a href="documents/dmshostagreement.pdf" target="_blank" download> <button class="btn"
-            style="float: left;"> Download</button></a><br>
-      </div>
-      <div class="col-sm-4">
-        <span class="glyphicon glyphicon-list-alt logo1 slideanim"></span>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-8">
-        <h2 style="text-align: left;">Final report</h2><br>
-        <p style="text-align: left;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua.<br> Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. </p><br><a href="documents/dmsfinalreport.pdf" target="_blank" download> <button class="btn"
-            style="float: left;"> Download</button></a><br>
-      </div>
-      <div class="col-sm-4">
-        <span class="glyphicon glyphicon-folder-close logo1 slideanim"></span>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-8">
-        <h2 style="text-align: left;">Submiting Documents</h2><br>
-        <p style="text-align: left;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua.<br> Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. </p><br><a href="https://www.classe365.com/" target="_blank"> <button class="btn"
-            style="float: left;"> Submit to class365</button></a><br>
-      </div>
-      <div class="col-sm-4">
-        <span class="glyphicon glyphicon-upload logo1 slideanim"></span>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <!-- Container (Contact Section) -->
-        <div id="contact" class="bg-grey" style="text-align: left;">
-          <h2 class="text-center" style="color:black;">CONTACT</h2>
-          <div class="row">
-            <div class="col-sm-5">
-              <p>Contact your Studen Advisor <br>Paula dos Santos </p>
-              <p><span class="glyphicon glyphicon-map-marker"></span> 816 Grandville St <br>
-                Vancouver , BC <br>
-                Canada</p>Phone: (604)6201111</p>
-              <p><a href="mailto:tech@talent-ciccc.ca"><span
-                    class="glyphicon glyphicon-envelope"></span>tech@talent-ciccc.ca
-              </p></a>
+    </section>
+
+    <section class="containerDocuments">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="boxDocs">
+              <h1>Host Agreement</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris.</p>
+                <a href="documents/dmshostagreement.pdf" download="" class="btn">Download</a>
             </div>
-            <form method="post" action="contact-form-process1.php">
-              <div class="col-sm-7 slideanim">
+          </div>
+          <div class="col-md-6">
+            <div class="boxDocs">
+              <h1>Performance Evaluation</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris.</p>
+                <a href="documents/dmshostagreement.pdf" download="" class="btn">Download</a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="boxDocs">
+              <h1>Final report</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris.</p>
+                <a href="documents/dmsfinalreport.pdf" download class="btn">Download</a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="boxDocs">
+              <h1>Submiting Documents</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris.</p>
+                <a href="https://www.classe365.com/" class="btn">Submit to class365</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="Coop_advisor student_advisor">
+      <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="picture">
+                <span><img src="Images/jess_portrait.jpg" class="jess"></span><br>
+                <h5 class="name">Paula dos Santos</h5>
+                <p class="description">Studen Advisor</p>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <h1>Contact Student Advisor</h1>
+               <form method="post" action="contact-form-process1.php">
+              <div class="col-sm-12">
                 <div class="row">
                   <div class="col-sm-6 form-group">
                     <input class="form-control" id="name" name="Name" placeholder="Name" type="text" required>
@@ -141,21 +160,25 @@
                 </div>
               </div>
             </form>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer docsPage">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <footer class="text-center">
+              <a href="#myPage" title="To Top">
+                <span class="glyphicon glyphicon-chevron-up"></span>
+              </a>
+              <p>&copy; 2021 ciccc.com Powered by Ciccc</a> </p>
+            </footer>
           </div>
         </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <footer class="text-center">
-          <a href="#myPage" title="To Top">
-            <span class="glyphicon glyphicon-chevron-up"></span>
-          </a>
-          <p>&copy; 2021 ciccc.com Powered by Carlos A. Diaz</a> </p>
-        </footer>
-      </div>
-    </div>
-  </div>
+    </section>
   <script src="main.js"></script>
 </body>
 </html>

@@ -223,7 +223,7 @@
   .navbar {
     background-color: #ffffff;
     z-index: 9999;
-    font-size: 18px;
+    font-size: 16px;
     font-family: Montserrat, sans-serif;
     font-weight: 500;
     height: 80px;
@@ -518,7 +518,13 @@
 
 .Coop_advisor {
   padding: 70px 0;
-  
+}
+
+.Coop_advisor.student_advisor {
+  width: 100%;
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+  background: #f7f7f7;
 }
 
 .description {
@@ -675,10 +681,17 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  width: 200px;
-  right: -64%;
+  width: 300px;
   top: 105%;
   display: none;
+}
+
+.subMenu.homeSubMenu {
+  right: -141%;
+}
+
+.subMenu.requiredSubMenu {
+  right: -50% !important;
 }
 
 .mainMenu li .subMenu li {
@@ -691,9 +704,6 @@
   background-color: white;
 }
 
-.mainMenu li .subMenu li:last-child {
-  border:none;
-}
 .mainMenu li .subMenu li:hover {
   background-color: #283B8A;
 }
@@ -709,4 +719,82 @@
   display: block;
 }
 
+.boxDocs {
+  width: 100%;
+  height: 300px;
+  padding: 10px;
+  background: #EFEFF1;
+  margin-bottom: 30px;
+}
 
+.boxDocs h1 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.boxDocs p {
+  text-align: center;
+  padding: 30px;
+}
+
+.boxDocs .btn {
+  margin: auto;
+  display: block;
+  text-decoration: none;
+}
+
+.containerDocuments {
+  padding: 70px 0;
+}
+
+.footer.docsPage {
+  background: white;
+}
+
+.questions {
+  width: 100%;
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+  background: #f7f7f7;
+}
+
+.staticContainer {
+  position: sticky;
+  top: 80px;
+}
+
+.bgImages {
+  position: sticky;
+  top: 300px;
+}
+
+.buttonsFaq {
+  margin: 50px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.buttonsFaq li {
+  text-align: center;
+  width: 100%;
+  background: #283B8A;
+  padding: 10px;
+  margin-bottom: 10px;
+  transition: 0.5s;
+  border: 1px solid transparent;
+}
+
+.buttonsFaq li:hover {
+  background: white;
+  border: 1px solid #283B8A;
+}
+
+.buttonsFaq li:hover a {
+  color: #283B8A;
+}
+
+.buttonsFaq li a {
+  color: white;
+  display: block;
+  text-decoration: none;
+}

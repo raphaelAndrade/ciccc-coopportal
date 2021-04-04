@@ -68,7 +68,15 @@ $(document).ready(() => {
     $(".mainMenu li .subMenu.homeSubMenu").fadeIn();
   });
 
-  $(".mainMenu li .subMenu").on("mouseleave", ()=> {
-    $(".mainMenu li .subMenu").fadeOut();
+  $(".mainMenu li .subMenu.homeSubMenu").on("mouseleave", ()=> {
+    $(".mainMenu li .subMenu.homeSubMenu").fadeOut();
+  })
+
+  $(".requiredDoc").on("mouseover",() => {
+    $(".mainMenu li .subMenu.requiredSubMenu").fadeIn();
+  });
+
+  $(".mainMenu li .subMenu.requiredSubMenu").on("mouseleave", ()=> {
+    $(".mainMenu li .subMenu.requiredSubMenu").fadeOut();
   })
 })

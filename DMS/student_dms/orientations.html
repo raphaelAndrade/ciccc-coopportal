@@ -24,8 +24,8 @@
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
   <div id="progressNamePage">orientationPage</div>
   <div class="container">
-     <!-- Nav -->
-     <div class="row">
+    <!-- Nav -->
+    <div class="row">
       <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
           <div class="navbar-header">
@@ -47,7 +47,18 @@
                   <li><a href="graduation.html">Graduation</a></li>
                 </ul>
               </li>
-              <li><a href="docs.html">Required Docs</a></li>
+              <li>
+                <a href="docs.html" class="requiredDoc">Required Docs</a>
+                <ul class="subMenu requiredSubMenu">
+                  <li><a href="documents/dmshostagreement.pdf" download>Host Agreement</a></li>
+                  <li>
+                    <a href="documents/dmshostagreement.pdf" download>Performance Evaluation</a>
+                  </li>
+                  <li>
+                    <a href="documents/dmsfinalreport.pdf" download>Final Report</a>
+                  </li>
+                </ul>
+              </li>
               <li><a href="events.html">Events</a></li>
               <li><a href="faq.html">FAQ</a></li>
               <li><a href="resources.html">Resources</a></li>
@@ -264,9 +275,11 @@
 
           </ul>
         </div>
-        <div class="col-md-7">
-          <div class="bg-hands">
-            <img src="Images/hands.jpg" class="hands img-responsive" />
+        <div class="bgImages">
+          <div class="col-md-7">
+            <div class="bg-hands">
+              <img src="Images/hands.jpg" class="hands img-responsive" />
+            </div>
           </div>
         </div>
       </div>
