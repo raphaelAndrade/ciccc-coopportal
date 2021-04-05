@@ -1,4 +1,11 @@
-$(document).ready(function(){
+$(document).ready(function(){;
+  
+
+  let triggerMenu = $(".buttonsFaq li  ");
+  triggerMenu.on("click",(e) => {
+    e.preventDefault();
+       triggerMenu.removeClass("active");
+  })
   // Add smooth scrolling to all links in navbar + footer link
   $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
     // Make sure this.hash has a value before overriding default behavior
@@ -78,5 +85,5 @@ $(document).ready(() => {
 
   $(".mainMenu li .subMenu.requiredSubMenu").on("mouseleave", ()=> {
     $(".mainMenu li .subMenu.requiredSubMenu").fadeOut();
-  })
+  });
 })

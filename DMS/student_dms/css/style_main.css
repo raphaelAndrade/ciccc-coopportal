@@ -789,12 +789,12 @@
   cursor: pointer;
 }
 
-.buttonsFaq li:hover {
+.buttonsFaq li:hover,.buttonsFaq li.active {
   background: white;
   border: 1px solid #283B8A;
 }
 
-.buttonsFaq li:hover a {
+.buttonsFaq li:hover a,.buttonsFaq li.active a {
   color: #283B8A;
 }
 
@@ -823,9 +823,13 @@
 }
 
 .faq li {
-  border-bottom: 1px solid #283B8A !important;
+  border-bottom: 1px solid #283B8A;
   padding: 10px 0;
   padding: 10px 0;
+}
+
+.faq li:last-child {
+  border-bottom: none;
 }
 
 
