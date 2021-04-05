@@ -74,6 +74,11 @@ $(document).ready(() => {
         storeChecked();
         countChecked();
     });
+
+    $(".triggercu").on("click",function(){
+        var eu = $(this).text();
+        $(this).addClass("active").siblings().removeClass("active")
+    })
 })
 
 /*TODO: save checkbox status to local storage */
