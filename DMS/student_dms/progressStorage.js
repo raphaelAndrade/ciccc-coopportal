@@ -75,9 +75,20 @@ $(document).ready(() => {
         countChecked();
     });
 
-    $(".triggercu").on("click",function(){
-        var eu = $(this).text();
-        $(this).addClass("active").siblings().removeClass("active")
+    $(".triggercu").on("click", function () {
+        $(this).addClass("active").siblings().removeClass("active");
+        var ui = $(this).attr("data-name");
+        console.log(ui)
+        switch (ui) {
+            case "dmsFaq":
+                $(".questionGeneral").fadeOut();
+                $(".questionDMS").fadeIn();
+                break;
+            case "wmadFaq":
+                $(".questionGeneral").fadeIn();
+                $(".questionDMS").fadeOut();
+                break;
+        }
     })
 })
 

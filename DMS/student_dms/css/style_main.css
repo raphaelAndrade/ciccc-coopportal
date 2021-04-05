@@ -760,6 +760,7 @@
   border-top: 1px solid #e7e7e7;
   border-bottom: 1px solid #e7e7e7;
   background: #f7f7f7;
+  height: 1300px;
 }
 
 .staticContainer {
@@ -773,9 +774,13 @@
 }
 
 .buttonsFaq {
-  /* margin: 50px 0; */
+  margin: 50px 0;
   padding: 0;
   list-style: none;
+}
+
+.containerQuestions {
+  position: relative;
 }
 
 .buttonsFaq li {
@@ -801,13 +806,20 @@
   display: block;
   text-decoration: none;
 }
-.questionDMS {
+.questionDMS, .questionGeneral {
   width: 100%;
   padding: 20px;
   min-height: 500px;
   background: #ffffff63;
   margin-top: 30px;
-  border: 1px solid #e7e7e7
+  border: 1px solid #e7e7e7;
+  position: absolute;
+  top: 0;
+}
+.questionGeneral {
+  position: absolute;
+  top: 0;
+  display: none;
 }
 
 .questionDMS h4 {
