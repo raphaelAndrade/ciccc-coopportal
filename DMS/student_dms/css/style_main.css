@@ -760,7 +760,6 @@
   border-top: 1px solid #e7e7e7;
   border-bottom: 1px solid #e7e7e7;
   background: #f7f7f7;
-  height: 1300px;
 }
 
 .staticContainer {
@@ -780,7 +779,7 @@
 }
 
 .containerQuestions {
-  position: relative;
+  /* position: relative; */
 }
 
 .buttonsFaq li {
@@ -806,24 +805,36 @@
   display: block;
   text-decoration: none;
 }
-.questionDMS, .questionGeneral {
+.questionDMSRaphael, .questionGeneralRaphael {
   width: 100%;
   padding: 20px;
-  min-height: 500px;
   background: #ffffff63;
   margin-top: 30px;
   border: 1px solid #e7e7e7;
-  position: absolute;
-  top: 0;
 }
-.questionGeneral {
-  position: absolute;
-  top: 0;
+
+.nameGroupQuestion {
+  width: 100%;
+  color: white;
+  background-color: #283B8A;
+  padding: 10px !important;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.questionDMSRaphael {
   display: none;
 }
 
-.questionDMS h4 {
+.questionGeneral {
+  position: absolute;
+  top: 0;
+}
+
+.questionDMSRaphael h4, .questionGeneralRaphael h4 {
   font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 20px;
 }
 
 .faq {
@@ -835,7 +846,8 @@
 .faq li {
   border-bottom: 1px solid #283B8A;
   padding: 10px 0;
-  padding: 10px 0;
+  position: relative;
+  
 }
 
 .faq li:last-child {
@@ -850,8 +862,17 @@
   text-align: left;
   color: #283B8A;
   padding: 0;
-  font-size: 20px;
+  font-size: 16px;
 }
+.collapsibleIcon {
+    font-size: 25px;
+    color: #283B8A;
+    float: right;
+    margin-right: 0;
+    position: absolute;
+    right: 10px;
+}
+
 
 .collapsible:hover {
   text-decoration: none;

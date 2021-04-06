@@ -75,18 +75,20 @@ $(document).ready(() => {
         countChecked();
     });
 
+
     $(".triggercu").on("click", function () {
         $(this).addClass("active").siblings().removeClass("active");
         var ui = $(this).attr("data-name");
-        console.log(ui)
         switch (ui) {
             case "dmsFaq":
-                $(".questionGeneral").fadeOut();
-                $(".questionDMS").fadeIn();
+                $(".questionGeneralRaphael").fadeOut();
+                $(".questionDMSRaphael").fadeIn();
+                $(".questions").css("height", heightQuestions1 + 200)
                 break;
             case "wmadFaq":
-                $(".questionGeneral").fadeIn();
-                $(".questionDMS").fadeOut();
+                $(".questionGeneralRaphael").fadeIn();
+                $(".questionDMSRaphael").fadeOut();
+                $(".questions").css("height", heightQuestion2 + 200)
                 break;
         }
     })
