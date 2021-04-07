@@ -69,9 +69,10 @@ for (i = 0; i < coll.length; i++) {
 $(document).ready(() => {
   $(".home").on("mouseover",() => {
     $(".mainMenu li .subMenu.homeSubMenu").fadeIn();
+    $(".mainMenu li .subMenu.requiredSubMenu").fadeOut();
     setTimeout(function(){ 
       $(".mainMenu li .subMenu.homeSubMenu").fadeOut();
-    }, 2000);
+    }, 4000);
   });
 
   $(".mainMenu li .subMenu.homeSubMenu").on("mouseleave", ()=> {
@@ -80,9 +81,10 @@ $(document).ready(() => {
 
   $(".requiredDoc").on("mouseover",() => {
     $(".mainMenu li .subMenu.requiredSubMenu").fadeIn();
+    $(".mainMenu li .subMenu.homeSubMenu").fadeOut();
     setTimeout(function(){ 
       $(".mainMenu li .subMenu.requiredSubMenu").fadeOut();
-    }, 2000 );
+    }, 4000 );
   });
 
   $(".mainMenu li .subMenu.requiredSubMenu").on("mouseleave", ()=> {
