@@ -662,9 +662,9 @@
 }
 
 .progressNamePage {
-  position: absolute;
+  position: absolute !important;
   left: -6000px;
-  opacity: 0;;
+  opacity: 0;
 }
 
 .maps {
@@ -887,6 +887,43 @@
   border-bottom: none !important;
 }
 
-/* .anwserQuestion {
-  font-size: 16px;
-} */
+.subSectionsQuestions {
+  background: white !important;
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+  border: 1px solid #e7e7e7;
+  transition: 0.8s;
+  margin-top: -500px;
+}
+
+.subSectionsQuestions.active {
+  margin-top: 0;
+}
+
+.subSectionsQuestions li {
+  background: transparent !important;  
+  padding: 0 !important;
+}
+
+.subSectionsQuestions li a {
+  text-align: left;
+  color: #283B8A;
+}
+
+.subSectionsQuestions li:hover {
+  border: 1px solid transparent !important;
+}
+
+.subSectionsQuestions li:hover a {
+  font-weight: bold;
+}
+.listSub {
+  background-color: transparent !important;
+  padding: 0 !important;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.listSub:hover {
+  border: 1px solid transparent !important;
+}

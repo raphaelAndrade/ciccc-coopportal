@@ -81,11 +81,13 @@ $(document).ready(() => {
         var ui = $(this).attr("data-name");
         switch (ui) {
             case "dmsFaq":
+                $(".subSectionsQuestions").removeClass("active");
                 $(".questionGeneralRaphael").fadeOut();
                 $(".questionDMSRaphael").fadeIn();
                 $(".questions").css("height", heightQuestions1 + 200)
                 break;
             case "wmadFaq":
+                $(".subSectionsQuestions").addClass("active");
                 $(".questionGeneralRaphael").fadeIn();
                 $(".questionDMSRaphael").fadeOut();
                 $(".questions").css("height", heightQuestion2 + 200)
