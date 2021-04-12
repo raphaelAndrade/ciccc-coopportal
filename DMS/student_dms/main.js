@@ -1,9 +1,10 @@
-$(document).ready(function(){;
+$(document).ready(function () {
+  ;
 
 
-  
+
   // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+  $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
       // Prevent default anchor click behavior
@@ -16,22 +17,22 @@ $(document).ready(function(){;
       // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
         scrollTop: $(hash).offset().top
-      }, 100, function(){
-   
+      }, 100, function () {
+
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
     } // End if
   });
-  
-  $(window).scroll(function() {
-    $(".slideanim").each(function(){
+
+  $(window).scroll(function () {
+    $(".slideanim").each(function () {
       var pos = $(this).offset().top;
 
       var winTop = $(window).scrollTop();
-        if (pos < winTop + 600) {
-          $(this).addClass("slide");
-        }
+      if (pos < winTop + 600) {
+        $(this).addClass("slide");
+      }
     });
   });
 })
@@ -43,10 +44,10 @@ $(document).ready(function(){;
 
 var modal = document.getElementById('id02');
 
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
 }
 
 // career services //
@@ -55,7 +56,7 @@ var coll = document.getElementsByClassName("collapsible");
 var i;
 
 for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
+  coll[i].addEventListener("click", function () {
     this.classList.toggle("active");
     var content = this.nextElementSibling;
     if (content.style.display === "block") {
@@ -67,27 +68,27 @@ for (i = 0; i < coll.length; i++) {
 }
 
 $(document).ready(() => {
-  $(".home").on("mouseover",() => {
+  $(".home").on("mouseover", () => {
     $(".mainMenu li .subMenu.homeSubMenu").fadeIn();
     $(".mainMenu li .subMenu.requiredSubMenu").fadeOut();
-    setTimeout(function(){ 
+    setTimeout(function () {
       $(".mainMenu li .subMenu.homeSubMenu").fadeOut();
     }, 4000);
   });
 
-  $(".mainMenu li .subMenu.homeSubMenu").on("mouseleave", ()=> {
+  $(".mainMenu li .subMenu.homeSubMenu").on("mouseleave", () => {
     $(".mainMenu li .subMenu.homeSubMenu").fadeOut();
   })
 
-  $(".requiredDoc").on("mouseover",() => {
+  $(".requiredDoc").on("mouseover", () => {
     $(".mainMenu li .subMenu.requiredSubMenu").fadeIn();
     $(".mainMenu li .subMenu.homeSubMenu").fadeOut();
-    setTimeout(function(){ 
+    setTimeout(function () {
       $(".mainMenu li .subMenu.requiredSubMenu").fadeOut();
-    }, 4000 );
+    }, 4000);
   });
 
-  $(".mainMenu li .subMenu.requiredSubMenu").on("mouseleave", ()=> {
+  $(".mainMenu li .subMenu.requiredSubMenu").on("mouseleave", () => {
     $(".mainMenu li .subMenu.requiredSubMenu").fadeOut();
   });
 })

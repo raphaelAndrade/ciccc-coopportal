@@ -360,7 +360,7 @@
 .banner {
   color: white;
   width: 100%;
-  background: url("Images/onlinestudy2.jpg") no-repeat center center fixed;
+  /* background: url("Images/onlinestudy2.jpg") no-repeat center center fixed; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -370,6 +370,38 @@
   text-align: center;
   position: relative;
 }
+
+.bgFaq {
+  background: url("Images/bg3.jpg") no-repeat center center fixed;
+}
+
+.careerPrepar {
+  background: url("Images/bg1.jpg") no-repeat center center fixed;
+}
+
+.orientation {
+  background: url("Images/bg6.jpg") no-repeat center center fixed;
+}
+
+.coopProcess {
+  background: url("Images/bg5.jpg") no-repeat center center fixed;
+}
+
+.termBanner {
+  background: url("Images/bg7.jpg") no-repeat center center fixed;
+}
+.graduationBanner {
+  background: url("Images/bg4.jpg") no-repeat center center fixed;
+}
+
+.requiredDocBanner {
+  background: url("Images/bg8.JPG") no-repeat center center fixed;
+}
+
+.eventBanner {
+  background: url("Images/linkedin.jpg") no-repeat center center fixed;
+}
+
 
 .banner h1 {
   margin-top: 17%;
