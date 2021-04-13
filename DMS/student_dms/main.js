@@ -37,11 +37,6 @@ $(document).ready(function () {
   });
 })
 
-// window.onload=function(){
-//   document.getElementById("toggle").click();
-// };
-
-
 var modal = document.getElementById('id02');
 
 window.onclick = function (event) {
@@ -52,20 +47,22 @@ window.onclick = function (event) {
 
 // career services //
 
-var coll = document.getElementsByClassName("collapsible");
-var i;
+// var coll = document.getElementsByClassName("collapsible");
+// var i;
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function () {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}
+// for (i = 0; i < coll.length; i++) {
+//   coll[i].addEventListener("click", function () {
+//     this.classList.toggle("active");
+//     var content = this.nextElementSibling;
+//     if (content.style.display === "block") {
+//       content.style.display = "none";
+//     } else {
+//       content.style.display = "block";
+//     }
+//   });
+// }
+
+
 
 $(document).ready(() => {
   $(".home").on("mouseover", () => {
@@ -91,4 +88,16 @@ $(document).ready(() => {
   $(".mainMenu li .subMenu.requiredSubMenu").on("mouseleave", () => {
     $(".mainMenu li .subMenu.requiredSubMenu").fadeOut();
   });
+
+  $(".collapsible").on("click", function () {
+
+    if ($(this).parent().find(".internalList").attr('aria-expanded') === true) {
+      console.log("abriu essa porra");
+      $(this).find(".collapsibleIcon").empty();
+      $(this).find(".collapsibleIcon").append("+");
+    } else {
+      $(this).find(".collapsibleIcon").empty();
+      $(this).find(".collapsibleIcon").append("-");
+    }
+  })
 })
