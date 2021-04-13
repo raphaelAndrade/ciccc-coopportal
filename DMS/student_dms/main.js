@@ -90,7 +90,6 @@ $(document).ready(() => {
   });
 
   $(".collapsible").on("click", function () {
-
     if ($(this).parent().find(".internalList").attr('aria-expanded') === true) {
       console.log("abriu essa porra");
       $(this).find(".collapsibleIcon").empty();
