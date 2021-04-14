@@ -1075,6 +1075,7 @@ footer .glyphicon {
   margin-top: 50px;
   width: 122%;
   transition: 0.5s;
+  cursor: pointer;
 }
 
 .bgNumbers img:hover {
