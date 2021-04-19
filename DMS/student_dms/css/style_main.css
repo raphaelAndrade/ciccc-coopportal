@@ -889,10 +889,6 @@ footer .glyphicon {
   list-style: none;
 }
 
-.containerQuestions {
-  /* position: relative; */
-}
-
 .buttonsFaq li {
   text-align: center;
   width: 100%;
@@ -1130,3 +1126,225 @@ footer .glyphicon {
   border: 1px solid #e7e7e7;
   padding: 15px;
 }
+
+.bannerTitle {
+  width: 100%;
+  height: 400px;
+  padding: 100px 25px;
+  position: relative;
+  margin-top: 200px;
+}
+
+.baseTitle {
+  font-size: 25vw;
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgba(0, 0, 0, 0.1);
+  z-index: -1;
+  /* color: rgba(0, 0, 0, 0.008); */
+  color: white;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  text-align: center;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+.baseTitle span {
+  width: 100%;
+}
+
+.bannerTitle h1 {
+  color: #283B8A;
+  font-size: 60px;
+  text-align: center;
+}
+
+.bannerTitle p {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.valign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.sectionImages {
+  background: #f7f7f7;
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+  padding: 70px 0;
+}
+
+.listImage {
+  background-color: #283B8A;
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.listImage:hover {
+  box-shadow: 0 0 20px rgba(42, 55, 232, 0.39);
+  transition: 0.5s;
+}
+
+.listImage span {
+  color: white;
+  z-index: 100;
+  position: absolute;
+  bottom: 20px;
+  left: -25px;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(-180deg);
+  font-size: 70px;
+  font-family: 'Barlow Condensed', sans-serif;
+  transition: 0.5s;
+}
+
+.listImage.bg2 {
+  background-color: #659991;
+}
+
+.listImage.bg3 {
+  background-color: #61a0ef;
+}
+
+.listImage.bg4 {
+  background-color: #9D88D8;
+}
+
+.listImage.bg5 {
+  background-color: #15298c
+}
+
+.listImage.horizontal span {
+  transform: none !important;
+  writing-mode: horizontal-tb;
+  bottom: -13px;
+  left: 16px;
+  font-size: 60px;
+}
+
+.listImage:hover span {
+  text-shadow: 1px 1px 3px white;
+}
+
+.bgText {
+  width: 100%;
+  height: 250px;
+  background-color: rgba(42, 55, 232, 0.2);
+  position: absolute;
+  bottom: 0;
+  filter: blur(1.5rem);
+  mix-blend-mode: darken;
+}
+
+
+.img1 {
+  width: 100%;
+  height: 660px;
+  background: url("Images/resumeImg.jpg") no-repeat;
+  background-position: -120px 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  opacity: 0.4;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.img2 {
+  width: 100%;
+  height: 660px;
+  background: url("Images/coverCover.jpg") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  opacity: 0.4;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.img3 {
+  width: 100%;
+  height: 200px;
+  background: url("Images/linkedinImage.jpg") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  opacity: 0.4;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.img4 {
+  width: 100%;
+  height: 200px;
+  background: url("Images/portifolioImg.jpg") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  opacity: 0.4;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.img5 {
+  width: 100%;
+  height: 200px;
+  background: url("Images/coverLetter.jpg") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  opacity: 0.4;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.img6 {
+  width: 100%;
+  height: 200px;
+  background: url("Images/jobSearch.jpg") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  opacity: 0.4;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.img1:hover,
+.img2:hover,
+.img3:hover,
+.img4:hover,
+.img5:hover,
+.img6:hover {
+  transition: 0.5s;
+  transform: scale(1.5, 1.5);
+  transition: all 0.6s ease-in-out;
+}
+
+.img2 {
+  width: 100%;
+  height: 200px;
+}
+
+.marginTop30px {
+  margin-top: 30px
+}
+

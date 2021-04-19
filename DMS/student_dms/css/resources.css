@@ -184,7 +184,7 @@ span.psw {
   }
   .panel-footer .btn:hover {
     border: 1px solid #f4511e;
-    background-color: #black !important;
+    background-color: black !important;
     color: white;
   }
   
@@ -258,9 +258,6 @@ span.psw {
       font-size: 150px;
     }
   }
-
- 
-}
 .fa {
   padding: 25px;
   font-size: 18px;
