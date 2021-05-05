@@ -45,7 +45,7 @@ window.onclick = function (event) {
   }
 }
 
-$(document).ready(() => {
+$(document).ready(function() {
   $(".home").on("mouseover", () => {
     $(".mainMenu li .subMenu.homeSubMenu").fadeIn();
     $(".mainMenu li .subMenu.requiredSubMenu").fadeOut();

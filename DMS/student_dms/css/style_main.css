@@ -447,6 +447,10 @@ footer .glyphicon {
   background: url("Images/linkedin.jpg") no-repeat center center fixed;
 }
 
+.resumeBanner {
+  background: url("Images/1resumeImg.jpg") no-repeat center center fixed;
+}
+
 
 .banner h1 {
   margin-top: 17%;
@@ -1138,10 +1142,10 @@ footer .glyphicon {
 .baseTitle {
   font-size: 25vw;
   color: transparent;
+  /* -webkit-text-stroke: 1.5px rgba(0, 0, 0, 0.1); */
   -webkit-text-stroke: 1.5px rgba(0, 0, 0, 0.1);
   z-index: -1;
-  /* color: rgba(0, 0, 0, 0.008); */
-  color: white;
+   color: rgba(0, 0, 0, 0.008); 
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1149,7 +1153,20 @@ footer .glyphicon {
   top: 0;
   text-align: center;
   font-family: 'Barlow Condensed', sans-serif;
+  z-index: 10;
 }
+
+.positionRelative {
+  position: relative !important;
+}
+
+.banner .baseTitle {
+  top: 300px;
+  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.7);
+  color: transparent ;
+  font-size: 20vw;
+ }
+
 
 .baseTitle span {
   width: 100%;
@@ -1343,8 +1360,244 @@ footer .glyphicon {
   width: 100%;
   height: 200px;
 }
-
+ 
 .marginTop30px {
   margin-top: 30px
 }
 
+.bgWhite {
+  background-color: white;
+  border: none;
+}
+
+.templates {
+  background: #f7f7f7;
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+  padding: 70px 0;
+}
+
+.listTemplate {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.listTemplate li {
+  display: inline-block;
+}
+
+.listTemplate{
+  width: 200px;
+  height: 200px;
+  border: 4px solid #75dab4;
+  border-radius: 100%;
+  background: #f7f7f7;
+  display: block;
+  text-align: center;
+  line-height: 200px;
+  text-decoration: none;
+  margin-top: 40px;
+  font-size: 25px;
+}
+.listTemplate:hover {
+  text-decoration: none;
+}
+.width50percent {
+  width: 100%;
+  background: #e7e7e7;
+  padding: 15% 0;
+  position: relative;
+}
+
+.imageSection {
+  width: 90%;
+  position: relative;
+  left: 25%;
+}
+
+.firstImpression {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.firstImpression li {
+  margin-bottom: 15px;
+}
+
+.firstImpression span {
+  color: #75dab4;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 13px;
+    border: 1px solid #75dab4;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.firstImpression p {
+  padding-left: 45px;
+  position: relative;
+  top: -30px;
+}
+
+.firstImpression li ul {
+  margin-left: 30px;
+}
+.firstImpression li ul li {
+  margin-bottom: 5px;
+}
+
+.firstImpression label {
+  font-weight: bold !important;
+  color: #75dab4;
+}
+
+.impressionTitle {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.whatDoInclude {
+    background: #f7f7f7;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+    padding: 70px 0 700px;
+}
+
+.paddingSection {
+  padding: 35px 0 0px!important;
+  top: 25px;
+}
+
+.paddingSection1 {
+  padding: 0 0 4%!important;
+}
+
+.whatDoInclude {
+  position: relative;
+  height: 500px;
+}
+
+.overCollor {
+  width: 100%;
+  height: 600px;
+  background-color: rgba(0, 0, 0, .7);
+  z-index: 1;
+  position: absolute;
+  top: 0
+}
+
+.backgroundImage {
+  width: 100%;
+  height: 600px;
+  background: url("Images/portifolioImg.jpg") no-repeat;
+  position: absolute;
+  top: 0
+}
+
+.bgTextInformation {
+  width: 100%;
+  height: 600px;
+  overflow-y: scroll;
+  background: #75dab4;
+  z-index: 10;
+  position: relative;
+  padding: 50px 40px;
+  
+}
+
+.bgTextInformation ul {
+  list-style: none;
+  padding: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding-bottom: 50px;
+}
+
+.bgTextInformation ul li ul {
+  padding-left: 20px;
+  list-style: square;
+  border-bottom: none;
+}
+
+.bgTextInformation ul li span {
+  font-weight: bold;
+}
+
+.fixTitle {
+  z-index: 20;
+  position: relative;
+  color: white
+}
+
+.examples {
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 15px;
+  background:  #5ec49e;
+  color: white;
+}
+
+.examples span {
+  display: block;
+}
+
+h6{
+  color: #0c0f16;
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+}
+
+.menuResume {
+  list-style: none;
+  margin: 40px 0;
+  padding: 0;
+}
+
+.menuResume li {
+  border: 1px solid #75dab4;
+  margin-top: 10px;
+  padding: 5px;
+  text-align: center;
+  transition: 0.2s;
+}
+
+.menuResume li:hover {
+  border-color: white;
+  background: white;
+}
+
+.menuResume li:hover a{
+  color: #75dab4;
+  font-weight: bold;
+}
+
+.menuResume li.active {
+  background: white;
+  border: solid 1px white;
+}
+
+.menuResume li.active a {
+  color: #75dab4;
+  font-weight: bold;
+}
+
+
+
+.menuResume li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  transition: 0.2s;
+}
+
+.menuResume li:first-child {
+  margin-top: 0;
+}
