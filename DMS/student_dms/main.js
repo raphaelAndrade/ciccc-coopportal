@@ -45,7 +45,7 @@ window.onclick = function (event) {
   }
 }
 
-$(document).ready(function() {
+$(document).ready(function () {
   $(".home").on("mouseover", () => {
     $(".mainMenu li .subMenu.homeSubMenu").fadeIn();
     $(".mainMenu li .subMenu.requiredSubMenu").fadeOut();
@@ -72,7 +72,6 @@ $(document).ready(function() {
 
   $(".collapsible").on("click", function () {
     if ($(this).parent().find(".internalList").attr('aria-expanded') === true) {
-      console.log("abriu essa porra");
       $(this).find(".collapsibleIcon").empty();
       $(this).find(".collapsibleIcon").append("+");
     } else {
@@ -80,4 +79,80 @@ $(document).ready(function() {
       $(this).find(".collapsibleIcon").append("-");
     }
   })
+  $(".headerContent").fadeIn();
+  $(".menuResume li").on("click", function (e) {
+    e.preventDefault()
+    $(".menuResume li").each(function () {
+      $(this).removeClass("active");
+    })
+    $(this).addClass("active");
+
+    let currentContent = $(this).attr("data-content");
+    switch (currentContent) {
+        case "header":
+          $(".personalContent").fadeOut();
+          $(".workExperienceContent").fadeOut();
+          $(".educationContent").fadeOut();
+          $(".referenceContent").fadeOut();
+          $(".certificationsContent").fadeOut();
+          $(".hobbiesContent").fadeOut();
+          $(".headerContent").fadeIn();
+        break;
+        case "personal":
+          $(".personalContent").fadeIn();
+          $(".workExperienceContent").fadeOut();
+          $(".educationContent").fadeOut();
+          $(".referenceContent").fadeOut();
+          $(".hobbiesContent").fadeOut();
+          $(".certificationsContent").fadeOut();
+          $(".headerContent").fadeOut();
+        break;
+        case "workExperience":
+          $(".personalContent").fadeOut();
+          $(".workExperienceContent").fadeIn();
+          $(".educationContent").fadeOut();
+          $(".referenceContent").fadeOut();
+          $(".hobbiesContent").fadeOut();
+          $(".certificationsContent").fadeOut();
+          $(".headerContent").fadeOut();
+        break;
+        case "education":
+          $(".personalContent").fadeOut();
+          $(".workExperienceContent").fadeOut();
+          $(".educationContent").fadeIn();
+          $(".referenceContent").fadeOut();
+          $(".hobbiesContent").fadeOut();
+          $(".certificationsContent").fadeOut();
+          $(".headerContent").fadeOut();
+        break;
+        case "reference":
+          $(".personalContent").fadeOut();
+          $(".workExperienceContent").fadeOut();
+          $(".educationContent").fadeOut();
+          $(".referenceContent").fadeIn();
+          $(".hobbiesContent").fadeOut();
+          $(".certificationsContent").fadeOut();
+          $(".headerContent").fadeOut();
+        break;
+        case "certifications":
+          $(".personalContent").fadeOut();
+          $(".workExperienceContent").fadeOut();
+          $(".educationContent").fadeOut();
+          $(".referenceContent").fadeOut();
+          $(".hobbiesContent").fadeOut();
+          $(".certificationsContent").fadeIn();
+          $(".headerContent").fadeOut();
+        break;
+        case "hobbies":
+          $(".personalContent").fadeOut();
+          $(".workExperienceContent").fadeOut();
+          $(".educationContent").fadeOut();
+          $(".referenceContent").fadeOut();
+          $(".hobbiesContent").fadeIn();
+          $(".certificationsContent").fadeOut();
+          $(".headerContent").fadeOut();
+        break;
+    }
+  })
+
 })
