@@ -96,6 +96,7 @@ $(document).ready(function () {
           $(".referenceContent").fadeOut();
           $(".certificationsContent").fadeOut();
           $(".hobbiesContent").fadeOut();
+          $(".skillContent").fadeOut();
           $(".headerContent").fadeIn();
         break;
         case "personal":
@@ -105,6 +106,7 @@ $(document).ready(function () {
           $(".referenceContent").fadeOut();
           $(".hobbiesContent").fadeOut();
           $(".certificationsContent").fadeOut();
+          $(".skillContent").fadeOut();
           $(".headerContent").fadeOut();
         break;
         case "workExperience":
@@ -114,6 +116,7 @@ $(document).ready(function () {
           $(".referenceContent").fadeOut();
           $(".hobbiesContent").fadeOut();
           $(".certificationsContent").fadeOut();
+          $(".skillContent").fadeOut();
           $(".headerContent").fadeOut();
         break;
         case "education":
@@ -123,6 +126,7 @@ $(document).ready(function () {
           $(".referenceContent").fadeOut();
           $(".hobbiesContent").fadeOut();
           $(".certificationsContent").fadeOut();
+          $(".skillContent").fadeOut();
           $(".headerContent").fadeOut();
         break;
         case "reference":
@@ -132,6 +136,7 @@ $(document).ready(function () {
           $(".referenceContent").fadeIn();
           $(".hobbiesContent").fadeOut();
           $(".certificationsContent").fadeOut();
+          $(".skillContent").fadeOut();
           $(".headerContent").fadeOut();
         break;
         case "certifications":
@@ -141,6 +146,17 @@ $(document).ready(function () {
           $(".referenceContent").fadeOut();
           $(".hobbiesContent").fadeOut();
           $(".certificationsContent").fadeIn();
+          $(".skillContent").fadeOut();
+          $(".headerContent").fadeOut();
+        break;
+        case "skills":
+          $(".personalContent").fadeOut();
+          $(".workExperienceContent").fadeOut();
+          $(".educationContent").fadeOut();
+          $(".referenceContent").fadeOut();
+          $(".hobbiesContent").fadeOut();
+          $(".certificationsContent").fadeOut();
+          $(".skillContent").fadeIn();
           $(".headerContent").fadeOut();
         break;
         case "hobbies":
@@ -150,9 +166,14 @@ $(document).ready(function () {
           $(".referenceContent").fadeOut();
           $(".hobbiesContent").fadeIn();
           $(".certificationsContent").fadeOut();
+          $(".skillContent").fadeOut();
           $(".headerContent").fadeOut();
         break;
     }
   })
+
+  const arr = ["kdkdkd","kdkdkdk","jdjkdjd","kdkdkdk"];
+  arr.join("+")
+  console.log(arr);
 
 })
