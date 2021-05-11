@@ -32,6 +32,10 @@
   margin-top: 30px
 }
 
+.marginTop20px {
+  margin-top: 20px !important;
+  display: block;
+}
 
 body {
   font: 400 15px "SourceSansPro-Regular";
@@ -1486,9 +1490,14 @@ footer .glyphicon {
   padding: 0;
 }
 
+.coverTittle {
+  font-size: 14vw !important;
+}
+
 .whatDoInclude {
   position: relative;
   height: 500px;
+  margin-bottom: 28px;
 }
 
 .overCollor {
@@ -1617,4 +1626,9 @@ h6{
   position: absolute;
   top: 0;
   display: none;
+}
+
+.withStyle {
+  list-style: square !important;
+  margin-left: 30px;
 }
