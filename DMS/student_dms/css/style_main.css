@@ -777,8 +777,8 @@ footer .glyphicon {
 
 .progress-bar {
   background: #283b8a;
+  position: relative;
 }
-
 
 .bgProgressBar {
   border-top: 1px solid #e7e7e7;
