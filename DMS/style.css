@@ -17,6 +17,10 @@ body {
   background-size: cover;
 }
 
+.listList li{
+  display: none !important;
+}
+
 /*INDEX*/
  
 .splash {

@@ -1644,6 +1644,20 @@ h6{
   transition: 0.2s;
 }
 
+.listList {
+  list-style-type: square !important;
+  margin-left: 19px;
+  
+}
+
+.listList ul {
+  list-style-type: none;
+}
+
+.listList ul > li:before {
+  content: "-";
+}
+
 .menuResume li:first-child {
   margin-top: 0;
 }
