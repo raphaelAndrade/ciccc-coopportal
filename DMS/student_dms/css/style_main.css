@@ -8,6 +8,15 @@
   display: none !important;
 }
 
+.titleCorrect {
+  position: relative !important;
+  left: -10px !important;
+}
+
+.marginBottom40px {
+  margin-bottom: 40px
+}
+
 .marginTop57Negative {
   margin-top: -57px !important;
 }
@@ -83,8 +92,8 @@ body {
   }
 
   .jess {
-    height: 208px;
-    width: auto;
+    height: 250px;
+    width: 250px;
     border-radius: 50%;
     margin-top: 21px;
     display: none
@@ -142,7 +151,7 @@ body {
 
 .jess {
   height: 250px;
-  width: auto;
+  width: 250px;
   border-radius: 50%;
 }
 
@@ -1404,7 +1413,7 @@ footer .glyphicon {
   background: #f7f7f7;
   border-top: 1px solid #e7e7e7;
   border-bottom: 1px solid #e7e7e7;
-  padding: 70px 0;
+  padding: 30px 0;
 }
 
 .listTemplate {
@@ -1418,17 +1427,11 @@ footer .glyphicon {
 }
 
 .listTemplate{
-  width: 200px;
-  height: 200px;
-  border: 4px solid #75dab4;
-  border-radius: 100%;
-  background: #f7f7f7;
+  width: 250px;
+  height: 250px;
   display: block;
-  text-align: center;
-  line-height: 200px;
   text-decoration: none;
   margin-top: 40px;
-  font-size: 25px;
 }
 .listTemplate:hover {
   text-decoration: none;
@@ -1672,3 +1675,15 @@ h6{
   list-style: square !important;
   margin-left: 30px;
 }
+
+.emailProfile {
+  color: #337ab7;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    font-size: 21px;
+    position: relative;
+    top: -27px;
+    margin-top: 20px;
+}
+

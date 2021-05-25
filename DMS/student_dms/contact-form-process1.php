@@ -119,7 +119,7 @@ if (isset($_POST['Email'])) {
   <a href="#myPage" title="To Top">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a>
-  <p>&copy; 2021 ciccc.com  Powered by Carlos A. Diaz</a> </p>
+  <p>&copy; 2021 ciccc.com Powered by CICCC</a> </p>
 </footer>
 <script src="main.js"></script>
     
