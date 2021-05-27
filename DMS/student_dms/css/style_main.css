@@ -41,6 +41,19 @@
   font-weight: bold !important;
 }
 
+.goodShot {
+  color: #5dad5d;
+  font-size: 25px;
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
+
+.badShot {
+  color: #f44336;
+  font-size: 25px;
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
 .contactTitle {
   margin-left: -16px !important;
 }
@@ -1404,6 +1417,10 @@ footer .glyphicon {
   margin-top: 30px
 }
 
+.borderImage {
+  border: 1px solid #e7e7e7;
+}
+
 .bgWhite {
   background-color: white;
   border: none;
@@ -1413,7 +1430,7 @@ footer .glyphicon {
   background: #f7f7f7;
   border-top: 1px solid #e7e7e7;
   border-bottom: 1px solid #e7e7e7;
-  padding: 30px 0;
+  padding: 70px 0;
 }
 
 .listTemplate {
