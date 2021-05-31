@@ -8,8 +8,17 @@
 }
 
 .ProTips {
-  background: #eba54b;
-  padding: 30px
+  background: #f7f7f7;
+    padding: 30px;
+    position: relative;
+    top: -30px;
+    margin-bottom: 49px;
+}
+.imgHiring {
+  width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 /* General Classes */
@@ -1468,7 +1477,10 @@ footer .glyphicon {
 }
 
 .listTemplate1 {
-  margin: 0;
+  margin-left: 35px;
+  margin-bottom: 0;
+  margin-top: 25px;
+  margin-right: 0;
   padding: 0;
 }
 
