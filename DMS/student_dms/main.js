@@ -71,7 +71,7 @@ $(document).ready(function () {
   $(".resources").on("mouseover", () => {
     $(".mainMenu li .subMenu.resourceSubMenu").fadeIn();
     $(".mainMenu li .subMenu.homeSubMenu").fadeOut();
-    $(".mainMenu li .subMenu.requiredSubMenu").fadeIn();
+    $(".mainMenu li .subMenu.requiredSubMenu").fadeOut();
     setTimeout(function () {
       $(".mainMenu li .subMenu.resourceSubMenu").fadeOut();
     }, 4000);
