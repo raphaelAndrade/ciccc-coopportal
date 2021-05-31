@@ -3,6 +3,15 @@
   src: url(fonts/SourceSansPro-Regular.ttf);
 }
 
+.jobTitle {
+  font-size: 12vw !important;
+}
+
+.ProTips {
+  background: #eba54b;
+  padding: 30px
+}
+
 /* General Classes */
 .displayNone {
   display: none !important;
@@ -1456,6 +1465,11 @@ footer .glyphicon {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.listTemplate1 {
+  margin: 0;
+  padding: 0;
 }
 
 .listTemplate li {
