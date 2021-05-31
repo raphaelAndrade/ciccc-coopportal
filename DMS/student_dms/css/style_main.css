@@ -61,6 +61,9 @@
 .paddingNone {
   padding: 0 !important;
 }
+.noPaddingRight {
+  padding-right: 0 !important;
+}
 
 .marginLeft20px {
   margin-left: 20px !important;
@@ -1280,7 +1283,7 @@ footer .glyphicon {
 }
 
 .listImage.bg2 {
-  background-color: #659991;
+  background-color: #edc32bd1
 }
 
 .listImage.bg3 {
@@ -1288,11 +1291,15 @@ footer .glyphicon {
 }
 
 .listImage.bg4 {
-  background-color: #9D88D8;
+  background-color: #9eaccc
 }
 
 .listImage.bg5 {
   background-color: #15298c
+}
+
+.listImage.bg6 {
+  background-color: #e77500fc
 }
 
 .listImage.horizontal span {
@@ -1385,6 +1392,18 @@ footer .glyphicon {
 }
 
 .img6 {
+  width: 100%;
+  height: 200px;
+  background: url("Images/jobSearch.jpg") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  opacity: 0.4;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.img7 {
   width: 100%;
   height: 200px;
   background: url("Images/jobSearch.jpg") no-repeat;

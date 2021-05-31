@@ -81,15 +81,19 @@ body {
   margin-right: auto;
 }
 
+.jobTitle {
+  font-size: 15vw !important;
+}
+
 
 input[type=text] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
-  border: none;
+  border: 1px solid lightgray;
   box-sizing: border-box;
-  background: transparent;
+ 
 }
 
 input[type=text]:focus {
@@ -109,7 +113,7 @@ input[type=button] {
 }
 
 ::placeholder {
-  font-size: 25px;
+  font-size: 18px;
   text-align: center;
   color: black;
 }

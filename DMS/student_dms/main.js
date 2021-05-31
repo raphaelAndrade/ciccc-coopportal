@@ -49,6 +49,7 @@ $(document).ready(function () {
   $(".home").on("mouseover", () => {
     $(".mainMenu li .subMenu.homeSubMenu").fadeIn();
     $(".mainMenu li .subMenu.requiredSubMenu").fadeOut();
+    $(".mainMenu li .subMenu.resourceSubMenu").fadeOut();
     setTimeout(function () {
       $(".mainMenu li .subMenu.homeSubMenu").fadeOut();
     }, 4000);
@@ -61,8 +62,18 @@ $(document).ready(function () {
   $(".requiredDoc").on("mouseover", () => {
     $(".mainMenu li .subMenu.requiredSubMenu").fadeIn();
     $(".mainMenu li .subMenu.homeSubMenu").fadeOut();
+    $(".mainMenu li .subMenu.resourceSubMenu").fadeOut();
     setTimeout(function () {
       $(".mainMenu li .subMenu.requiredSubMenu").fadeOut();
+    }, 4000);
+  });
+
+  $(".resources").on("mouseover", () => {
+    $(".mainMenu li .subMenu.resourceSubMenu").fadeIn();
+    $(".mainMenu li .subMenu.homeSubMenu").fadeOut();
+    $(".mainMenu li .subMenu.requiredSubMenu").fadeIn();
+    setTimeout(function () {
+      $(".mainMenu li .subMenu.resourceSubMenu").fadeOut();
     }, 4000);
   });
 
@@ -171,9 +182,4 @@ $(document).ready(function () {
         break;
     }
   })
-
-  const arr = ["kdkdkd","kdkdkdk","jdjkdjd","kdkdkdk"];
-  arr.join("+")
-  console.log(arr);
-
 })
