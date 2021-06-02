@@ -1712,7 +1712,11 @@ h6{
 .listList {
   list-style-type: square !important;
   margin-left: 19px;
-  
+}
+
+.porfolioLink {
+  font-weight: bold;
+  font-size: 25px;
 }
 
 .listList ul {
